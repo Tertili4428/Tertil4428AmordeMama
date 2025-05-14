@@ -2,20 +2,40 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Amor de Madre</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amor de Madre - Tienda Online</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Bienvenidos a Amor de Madre</h1>
-  <p>Tienda virtual hecha con mucho amor.</p>
 
-  <div class="producto">
-    <img src="https://via.placeholder.com/200" alt="Producto ejemplo">
-    <h2>Producto 1</h2>
-    <p>Descripción breve del producto</p>
-    <p><strong>$19.99</strong></p>
-    <button>Comprar</button>
-  </div>
+  <header>
+    <h1>🛍️ Amor de Madre</h1>
+    <p>Productos de calidad para toda la familia</p>
+  </header>
 
+  <!-- Buscador -->
+  <input type="text" id="buscador" placeholder="Buscar productos...">
+
+  <!-- Productos -->
+  <section id="productos">
+    <div class="producto">
+      <img src="https://via.placeholder.com/250x250.png?text=Muñeca+1" alt="Producto 1">
+      <h2>Muñeca Artesanal</h2>
+      <p>$30 USD</p>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" id="paypal_form">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="tucorreo@ejemplo.com">
+        <input type="hidden" name="item_name" value="Muñeca Artesanal">
+        <input type="hidden" name="amount" value="30">
+        <input type="hidden" name="currency_code" value="USD">
+        <button type="submit" class="boton">Comprar con PayPal</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/1234567890" class="whatsapp" target="_blank">💬 ¿Tienes dudas? Escríbenos</a>
+
+  <script src="script.js"></script>
 </body>
 </html>
